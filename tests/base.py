@@ -9,8 +9,7 @@ from pages.main_nav import MainNavigation
 
 class UIAutomationBase(unittest.TestCase):
 
-    base_url = ''
-    login_required = True
+    login_required = False
 
     driver = None
     home_page = None

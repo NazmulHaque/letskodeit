@@ -22,6 +22,7 @@ class LoginPage(object):
         password_input.clear()
         password_input.send_keys(credentials['password'])
 
+        self.driver_waits.wait_till_element_is_clickable(LoginPageLocators.LOGIN_BUTTON)
         self.driver.find_element(*LoginPageLocators.LOGIN_BUTTON).click()
 
         self.driver_waits.wait_till_element_is_visible(MainNavLocators.MY_PROFILE_ICON)

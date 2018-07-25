@@ -27,7 +27,7 @@ class CoursesPage(object):
 
         for course_element in course_elements:
             course_title = course_element.find_element(*CoursesPageLocators.COURSE_TITLE).text
-            course_price =  course_element.find_element(*CoursesPageLocators.COURSE_PRICE).text
+            course_price = course_element.find_element(*CoursesPageLocators.COURSE_PRICE).text
 
             course_details = {
                 'title': course_title,

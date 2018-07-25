@@ -17,8 +17,8 @@ class DriverWaits(object):
     def wait_till_element_is_present(self, locator):
         self.wait.until(EC.presence_of_element_located(locator), 'Element is not present in the DOM')
 
-    def wait_till_element_is_clickable(self, locator):
-        self.wait.until(EC.element_to_be_clickable(locator), 'Element is not clickable')
-
     def wait_till_element_is_visible(self, locator):
         self.wait.until(EC.visibility_of_element_located(locator), 'Element is not visible in the DOM')
+
+    def wait_till_element_is_clickable(self, locator):
+        self.wait.until(EC.element_to_be_clickable(locator), 'Element is not clickable')
